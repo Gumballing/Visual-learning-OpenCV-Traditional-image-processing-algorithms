@@ -1,6 +1,6 @@
 # Win10下OpenCV在visual studio上的配置<br>
 ## OpenCV相关库下载方式<br>
-1.从[官网](http://opencv.org/) http://opencv.org/ 下载需要类型的安装包.进去后选择Releases（发行）菜单即可选择所需版本的库。<br>    
+1.从[官网](http://opencv.org/) :http://opencv.org/ 下载需要类型的安装包.进去后选择Releases（发行）菜单即可选择所需版本的库。<br>    
 2.在GitHub上搜索opencv出来的第一个和第二个项目就是opencv和opencv-contrib（opencv扩展库），进去后点击tag下拉选项选择需要的版本下载即可。<br>
 ## 版本选择<br>
 这里涉及到了OpenCV对VC版本的支持情况<br>
