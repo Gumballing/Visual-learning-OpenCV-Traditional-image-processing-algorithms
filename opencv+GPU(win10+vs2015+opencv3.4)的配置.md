@@ -30,16 +30,26 @@ TBB，Intel Threading Building Blocks，是为了方便程序员使用多核处�
 新建一个文件夹把这两个源码文件都放进去。
 
 ## CMake编译带有TBB、cuda和contrib的opencv
-打开CMAKE-gui后在source code选择opencv-source所在文件夹下的opencv文件夹。下面where to build the binaries选择一个要存放生成的opencv安装包的文件夹。<dr>
+打开CMAKE-gui后在source code选择opencv-source所在文件夹下的opencv文件夹。where to build the binaries选择一个要存放生成的opencv安装包的文件夹。<dr>
+	
 点击configure，弹出界面选择环境，这里选择VS 2015 。第一次configure done后勾选WITH_TBB 和WITH_CUDA。<dr>
+	
 在OPENCV     OPENCV_EXTRA_MODULES_PATH填上opencv_contrib的modules的路径：D:/opencv3.4-source/opencv_contrib/modules   <dr>
+	
 填写TBB路径：![](https://github.com/Gumballing/image_storage/blob/main/TBB%E8%B7%AF%E5%BE%84.jpg)    <dr>
+	
 填写完成后再次点击configure，提示configure done无报错后点击generate，生成完成后点击open project在VS中进行生成。<dr>
+	
 在VS中选择不同的编译模式，分别生成debug和release下的安装包。<dr>
+	
 DEBUG下：点击ALL_BUILD右键生成，等一会，生成成功部分，有部分生成失败，不用管。<dr>
+	
 点击INSTALL，右键，生成。此时可能会报一个错误LNK1104：无法打开文件python35_d.lib<dr>
+	
 这是因为电脑安装了Anaconda自带的python，找到ANACONDA/include/pyconfig.h文件打开后找到图中那两句注释掉，重新右键生成INSTALL，生成成功。<dr>
+	
 ![](https://github.com/Gumballing/image_storage/blob/main/LINK1104.png)
+
 在Release下也进行同样的操作，ALL_BUILD和INSTALL都生成成功无失败后再切换到Debug下重新生成ALL_BUILD和INSTALL，全部生成成功后本地的安装包即为最终的配置安装包。<dr>
 
 ## 在VS中配置GPU版的opencv
