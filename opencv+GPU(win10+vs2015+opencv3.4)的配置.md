@@ -1,12 +1,12 @@
 # opencv+GPU(win10+vs2015+opencv3.4)的配置
 
 ## 用到的相关软件和库
-VS2015<dr>
-CMake<dr>
-CUDA10.1<dr>
-TBB<dr>
-opencv3.4.6<dr>
-opencv-contrib<dr>
+	VS2015\<dr>
+	CMake\<dr>
+	CUDA10.1\<dr>
+	TBB\<dr>
+	opencv3.4.6\<dr>
+	opencv-contrib\<dr>
   
 ## 配置前的准备
 （1）安装好VS之后安装CUDA10（必须先安装VS，再安装CUDA）<dr>
