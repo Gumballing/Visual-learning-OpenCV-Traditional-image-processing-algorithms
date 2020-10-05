@@ -20,10 +20,12 @@ CUDA_SDK_BIN_PATH = %CUDA_SDK_PATH%\bin\win64
 CUDA_SDK_LIB_PATH = %CUDA_SDK_PATH%\common\lib\x64 
 ```
 查看是否安装成功：打开cmd，输入：nvcc -V。如果结果显示有CUDA的版本则安装成功.<dr>
+	
 （2）下载TBB<dr>
 TBB，Intel Threading Building Blocks，是为了方便程序员使用多核处理器的C++库.opencv自带的很多函数利用这个库进行了优化，可以实现一些函数的并行，比如opencv3中的canny函数中就有TBB加速.<dr>
 在TBB官网或者GitHub上下载TBB安装包至本地解压后，可以放在任意目录，这里我放在了D:\SOFTWARE\TBB。<dr>
 添加TBB至系统环境：在系统-> 高级系统设置->环境变量->path 后边加入下边地址：D:\SOFTWARE\TBB\tbb44_20160413oss\bin\intel64\vc14（这里注意选择对应的32位 或者64 位和对应的VS版本，VS2015对应vc14）.\<dr>
+	
 （3）下载opencv和opencv-contrib源码<dr>
 新建一个文件夹把这两个源码文件都放进去。
 
